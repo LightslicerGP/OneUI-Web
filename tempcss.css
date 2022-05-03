@@ -1,13 +1,33 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000000;
+        --section: #171717;
+        --text: #fafafa;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #f6f6f6;
+        --section: #fcfcfc;
+        --text: #000000;
+    }
+}
+
 :root {
-    --margin: 0px;
+    --margin: 100vw;
+    font-size: 20px;
+    color: var(--text);
 }
 
 @media screen and (min-width: 320px) {
     :root {
-        --margin: 50px;
+        --body_width: 270px;
+        --header_margin: 135px;
     }
 }
 
+/*
 @media screen and (min-width: 384px) {
     :root {
         --margin: 83px;
@@ -19,13 +39,14 @@
         --margin: 117px;
     }
 }
-
+*/
 @media screen and (min-width: 600px) {
     :root {
-        --margin: 150px;
+        --body_width: 350px;
     }
 }
 
+/*
 @media screen and (min-width: 884px) {
     :root {
         --margin: 183px;
@@ -37,13 +58,14 @@
         --margin: 217px;
     }
 }
-
+*/
 @media screen and (min-width: 1080px) {
     :root {
-        --margin: 250px;
+        --body_width: 650px;
     }
 }
 
+/*
 @media screen and (min-width: 1440px) {
     :root {
         --margin: 283px;
@@ -55,32 +77,27 @@
         --margin: 317px;
     }
 }
-
+*/
 body {
     margin: 0px;
-}
-
-.group {
-    height: 100vh;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px var(--margin) 0px var(--margin);
 }
 
-.a {
-    font-size: 12px;
+header {
+    padding: var(--header_margin) 0vw;
 }
 
-.b {
-    font-size: 16px;
+main {
+    background-color: var(--section);
+    padding: 25px;
+    border-radius: 25px;
+    width: var(--body_width);
 }
 
-.c {
-    font-size: 20px;
-}
-
-.d {
-    font-size: 24px;
+p {
+    margin: 0px;
 }
