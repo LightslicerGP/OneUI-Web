@@ -16,8 +16,7 @@
 
 @media screen and (min-width: 412px) {
     :root {
-        /*--margin: 117px;*/
-        --margin: 0px;
+        --margin: 117px;
     }
 }
 
