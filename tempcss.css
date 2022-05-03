@@ -1,3 +1,25 @@
+:root {
+    --margin: 0px;
+}
+
+@media screen and (min-width: 320px) {
+    :root {
+        --margin: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    :root {
+        --margin: 150px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    :root {
+        --margin: 250px;
+    }
+}
+
 body {
     margin: 0px;
 }
@@ -8,21 +30,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 50px 0px 50px;
+    padding: 0px var(--margin) 0px var(--margin);
 }
 
-#a {
+.a {
     font-size: 12px;
 }
 
-#b {
+.b {
     font-size: 16px;
 }
 
-#c {
+.c {
     font-size: 20px;
 }
 
-#d {
+.d {
     font-size: 24px;
 }
