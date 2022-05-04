@@ -87,7 +87,7 @@ body::-webkit-scrollbar {
 }
 
 header {
-    height: 275px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
