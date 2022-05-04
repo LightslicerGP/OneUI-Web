@@ -84,7 +84,7 @@ body {
 }
 
 header {
-    height: 275px;
+    height: 325px;
     display: flex;
     align-items: center;
     flex-direction: column;
