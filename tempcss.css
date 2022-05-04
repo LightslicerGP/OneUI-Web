@@ -82,8 +82,12 @@ body {
     justify-content: center;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header {
-    height: 325px;
+    height: 375px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -122,7 +126,7 @@ nav>svg:first-child {
 
 nav>svg {
     stroke: var(--text);
-    width: 40px;
+    width: 55px;
     height: 25px;
 }
 
