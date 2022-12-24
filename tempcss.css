@@ -8,6 +8,7 @@
         --switchback: #666666;
         --switchline: #8f8f8f;
         --switchfront: #fafafa;
+        --switchactive: #272727;
     }
 }
 
@@ -21,6 +22,7 @@
         --switchback: #999999;
         --switchline: #8c8c8c;
         --switchfront: #fafafa;
+        --switchactive: #E9E9E9;
     }
 }
 
