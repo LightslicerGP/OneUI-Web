@@ -1,43 +1,44 @@
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #000000;
-        --section: #171717;
-        --text: #fafafa;
-        --subtext: #999999;
-        --subheading: #a9a9a9;
-        --switchback: #666666;
-        --switchline: #8f8f8f;
-        --switchfront: #fafafa;
-        --switchactive: #272727;
-    }
+  :root {
+    --background: #000000;
+    --section: #171717;
+    --text: #fafafa;
+    --subtext: #999999;
+    --subheading: #a9a9a9;
+    --switchback: #666666;
+    --switchline: #8f8f8f;
+    --switchfront: #fafafa;
+    --switchactive: #272727;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --background: #f6f6f6;
-        --section: #fcfcfc;
-        --text: #000000;
-        --subtext: #8c8c8c;
-        --subheading: #636363;
-        --switchback: #999999;
-        --switchline: #8c8c8c;
-        --switchfront: #fafafa;
-        --switchactive: #E9E9E9;
-    }
+  :root {
+    --background: #f6f6f6;
+    --section: #fcfcfc;
+    --text: #000000;
+    --subtext: #8c8c8c;
+    --subheading: #636363;
+    --switchback: #999999;
+    --switchline: #8c8c8c;
+    --switchfront: #fafafa;
+    --switchactive: #e9e9e9;
+  }
 }
 
 * {
-    font-weight: normal;
-    color: var(--text);
-    user-select: none;
+  font-weight: normal;
+  color: var(--text);
+  user-select: none;
 }
 
 :root {
-    --body_width: 100vw;
-    font-size: 18px;
+  --body_width: 100vw;
+  font-size: 18px;
 }
 
-@media screen and (min-width: 320px) {}
+@media screen and (min-width: 320px) {
+}
 
 /*
   @media screen and (min-width: 384px) {
@@ -53,9 +54,9 @@
   }
   */
 @media screen and (min-width: 600px) {
-    :root {
-        --body_width: 450px;
-    }
+  :root {
+    --body_width: 450px;
+  }
 }
 
 /*
@@ -72,9 +73,9 @@
   }
   */
 @media screen and (min-width: 1080px) {
-    :root {
-        --body_width: 700px;
-    }
+  :root {
+    --body_width: 700px;
+  }
 }
 
 /*
@@ -91,161 +92,189 @@
   }
   */
 body {
-    margin: 0px;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 0px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 header {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-header>title {
-    display: block;
-    font-size: 34px;
-    margin: 0pc;
+header > title {
+  display: block;
+  font-size: 34px;
+  margin: 0px;
 }
 
-header>p {
-    font-size: 14px;
-    color: #a9a9a9;
+header > p {
+  font-size: 14px;
+  color: #a9a9a9;
 }
 
 nav {
-    height: 45px;
-    width: var(--body_width);
-    background-color: var(--background);
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-direction: row;
-    position: sticky;
-    top: 0px;
+  height: 45px;
+  width: var(--body_width);
+  background-color: var(--background);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+  position: sticky;
+  top: 0px;
 }
 
-nav> :first-child {
-    margin: 0px auto 0px 21px;
+nav > :first-child {
+  margin: 0px auto 0px 24px;
 }
 
-nav> :last-child {
-    margin-right: 21px;
+nav > :last-child {
+  margin-right: 24px;
 }
 
-nav>svg {
-    stroke: var(--text);
-    height: 25px;
+nav > svg {
+  stroke: var(--text);
+  height: 24px;
 }
 
 main {
-    width: var(--body_width);
-    border-radius: 25px;
-    margin-bottom: 65px;
+  width: var(--body_width);
+  border-radius: 24px;
+  margin-bottom: 64px;
 }
 
 section,
 .SingleSwitch {
-    background-color: var(--section);
-    padding: 19px 20px 20px 24px;
-    border-radius: 30px;
-    margin-bottom: 12px;
+  background-color: var(--section);
+  padding: 20px 24px 20px 24px;
+  border-radius: 30px;
+  margin-bottom: 12px;
 }
 
-section>p {
-    margin-right: auto;
+section > p {
+  margin-right: auto;
 }
 
 .SectionHeader {
-    color: var(--subheading);
-    margin-left: 20px;
+  color: var(--subheading);
+  margin-left: 24px;
+  margin-bottom: 4px;
+  font-size: 14px;
 }
 
 footer {
-    position: fixed;
-    width: var(--body_width);
-    bottom: 0;
-    height: 65px;
-    background-color: var(--section);
-    border-radius: 25px 25px 0px 0px;
+  position: fixed;
+  width: var(--body_width);
+  bottom: 0;
+  height: 65px;
+  background-color: var(--section);
+  border-radius: 25px 25px 0px 0px;
 }
 
 p {
-    margin: 0px;
+  margin: 0px;
 }
 
 label {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-label>span {
-    margin-right: auto;
+label > span {
+  margin-right: auto;
 }
 
 .Switch {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-    height: 18px;
-    width: 37px;
-    border-radius: 16px;
-    display: inline-block;
-    position: relative;
-    margin: 2px 7px 0 auto;
-    border: none;
-    background-color: var(--switchback);
-    transition: all .2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  height: 16px;
+  width: 32px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0px 4px 0 auto;
+  border: none;
+  background-color: var(--switchback);
+  transition: transform 0.2s ease;
 }
 
 .Switch:after {
-    margin-left: auto;
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--switchfront);
-    border: 1px solid var(--switchline);
-    transition: transform 0.25s;
+  margin-left: auto;
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--switchfront);
+  border: 1px solid var(--switchline);
+  transition: transform 0.25s;
 }
 
 .Switch:checked:after {
-    transform: translatex(15px);
-    border-color: #0381FE;
+  transform: translatex(20px);
+  border-color: #0381fe;
 }
 
 .Switch:checked {
-    background-color: #0381FE;
+  background-color: #0381fe;
 }
 
 .SingleSwitch {
-    font-size: 21px;
-    cursor: pointer;
+  font-size: 21px;
+  cursor: pointer;
 }
 
 .CheckBox {
-    margin: 6px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    background-color: var(--section);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid var(--switchline);
+  margin: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--section);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--switchline);
+  position: relative;
+}
+
+.CheckBox:checked {
+  background-color: #0381fe;
+  border: none;
+}
+
+.CheckBox::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 25%;
+  height: 50%;
+  border: 2px solid white;
+  transform: translate(-50%, -50%) rotate(-135deg);
+  border-bottom: none;
+  border-right: none;
+  opacity: 0;
+  border-radius: 1px;
+}
+
+.CheckBox:checked::before {
+  opacity: 1;
 }
